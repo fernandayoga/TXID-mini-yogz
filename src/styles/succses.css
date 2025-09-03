@@ -1,0 +1,127 @@
+/* ============================= */
+/* Dark Theme - Success Page     */
+/* ============================= */
+
+.success-container {
+  background-color: #121212;
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.success-card {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Title */
+.success-card h1 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-shadow: 0 0 6px rgba(255, 204, 0, 0.5);
+}
+
+/* Detail Info */
+.success-card p {
+  margin: 0;
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.success-card p strong {
+  color: #ffcc00;
+}
+
+/* VA Number highlight */
+.success-card .va-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc00;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 15px 0;
+  letter-spacing: 2px;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.4);
+}
+
+/* Button */
+.success-card button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #121212;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.success-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+}
+
+.success-card button:active {
+  transform: scale(0.95);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .success-card {
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .success-card h1 {
+    font-size: 20px;
+  }
+
+  .success-card p {
+    font-size: 14px;
+  }
+
+  .success-card .va-number {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .success-card button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
