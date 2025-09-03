@@ -20,7 +20,7 @@ const Home = () => {
   useEffect(() => {
   if (!film) return;
 
-  fetch(`http://www.omdbapi.com/?s=${film}&apikey=758cc45e`)
+  fetch(`https://www.omdbapi.com/?s=${film}&apikey=758cc45e`)
     .then((res) => res.json())
     .then((data) => {
       if (data.Response === "False") {
