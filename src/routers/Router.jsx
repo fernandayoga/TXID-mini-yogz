@@ -4,7 +4,7 @@ import CatalogFilm from "../pages/CatalogFilm";
 import DetailFilm from "../pages/DetailFilm";
 import { detailFilm } from "../apis/loader";
 import ErrorPage from "../error/ErrorPage";
-import BeliTiket from "../pages/beliTiket";
+import BeliTiket from "../pages/BeliTiket";
 import Succes from "../pages/Succes";
 
 
